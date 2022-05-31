@@ -1,0 +1,20 @@
+<!--list.wxml-->
+<view class="container">
+  <view class="news-item-container" >
+  <!-- 循环list数组，从第二个数组元素开始，第一个数组元素当上一个页面的封面使用 -->
+    <view wx:for="{{list}}"  wx:for-index="id">
+    <block wx:if="{{id>0}}"><!-- 从第二个数组元素开始 -->
+        <view class="news-item" bindtap="togodetail" data-id="{{item._id}}" data-leibie="{{item.leibie}}">
+          <view class="news-item-left">
+            <text class="news-item-title">{{item.title}}</text>
+          </view>
+          <view class="news-item-right">
+            <image src="{{item.image}}" class="news-image"/>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+
