@@ -1,0 +1,81 @@
+<!--theme.wxml-->
+<!-- 常识 -->
+<view class="container">
+    <view class="card"   wx:for="{{list}}" >
+    <view bindtap="gotolist" data-leibie="{{item.leibie}}">
+        <image src="{{item.images}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title" name="12">{{item.leibie}}</text>
+            </view>
+            <view>
+                <text class="card-desc">{{item.description}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+</view>
+<!-- 科普 -->
+<view class="container">
+    <view class="card"   wx:for="{{shuju}}" >
+    <view bindtap="gotolist" data-leibie="{{item.leibie}}">
+        <image src="{{item.images}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title" name="12">{{item.leibie}}</text>
+            </view>
+            <view>
+                <text class="card-desc">{{item.description}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+</view>
+<!-- 生活 -->
+<view class="container">
+    <view class="card"   wx:for="{{live}}" >
+    <view bindtap="gotolist" data-leibie="{{item.leibie}}">
+        <image src="{{item.images}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title" name="12">{{item.leibie}}</text>
+            </view>
+            <view>
+                <text class="card-desc">{{item.description}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+</view>
+<!-- 心理 -->
+<view class="container">
+    <view class="card"   wx:for="{{pyo}}" >
+    <view bindtap="gotolist" data-leibie="{{item.leibie}}">
+        <image src="{{item.images}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title" name="12">{{item.leibie}}</text>
+            </view>
+            <view>
+                <text class="card-desc">{{item.description}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+</view>
+<!-- 影视 -->
+<view class="container">
+    <view class="card"   wx:for="{{film}}" >
+    <view bindtap="gotolist" data-leibie="{{item.leibie}}">
+        <image src="{{item.images}}" class="card-image"></image>
+        <view class="card-content">
+            <view>
+                <text class="card-title" name="12">{{item.leibie}}</text>
+            </view>
+            <view>
+                <text class="card-desc">{{item.description}}</text>
+            </view>
+        </view>
+        </view>
+    </view>
+</view>

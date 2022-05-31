@@ -1,0 +1,17 @@
+
+<!-- 登陆页面 -->
+<view class="myLogin">
+  <block wx:if="{{isLogin}}">
+    <image src="{{src}}"></image>
+    <text>{{nickName}}</text>
+  </block>
+  <button wx:else open-type="getUserInfo" bindtap="userinfo">未登录，点此登录</button>
+</view>
+<!-- 浏览记录 -->
+<view class="liulan" bindtap="gotojilu" >
+<image class="image" src="../../images/浏览记录 (4).png" ></image>
+<view>
+<text class="jilu">浏览记录</text>
+</view>
+</view>
+

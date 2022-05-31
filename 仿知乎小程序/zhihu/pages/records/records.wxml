@@ -1,0 +1,31 @@
+<!--list.wxml-->
+<view class="container">
+  <view class="news-item-container" >
+    <view wx:for="{{list}}"  wx:for-index="id">
+        <view class="news-item">
+          <view class="news-item-left"bindtap="togodetail" data-leibie="{{item.leibie}}"  data-it="{{item._id}}" data-id="{{item.id}}" >
+            <text class="news-item-title">{{item.title}}</text>
+          </view>
+          <view class="news-item-right">
+            <image src="{{item.image}}" class="news-image"/>
+          </view>
+          <view class="remove" bindtap="removeRocord" data-id="{{item.id}}" data-it="{{item._id}}">
+          <text>删除记录</text>
+          </view>
+        
+          <view class="leibie" >
+          <text>{{item.leibie}}</text>
+          </view>
+
+          <block wx:if="{{item.id}}">
+          <view class="leibie" >
+          <text>主页</text>
+          </view>
+          </block>
+        </view>
+    
+    </view>
+  </view>
+</view>
+
+
